@@ -24,7 +24,7 @@
 
                 <div class="card">
                     <div class="card-header">
-                        <h4>Importar excel</h4>
+                        <h4>Importar excel para mysql</h4>
                     </div>
                     <div class="card-body">
 
@@ -32,6 +32,25 @@
 
                             <input type="file" name="import_file" class="form-control" />
                             <button type="submit" name="save_excel_data" class="btn btn-primary mt-3">Importar</button>
+
+                        </form>
+
+                    </div>
+                </div>
+                <div class="card mt-5">
+                    <div class="card-header">
+                        <h4>Exportar dados mysql para excel</h4>
+                    </div>
+                    <div class="card-body">
+
+                        <form action="code.php" method="POST" >
+
+                            <select name="export_file_type"  class="form-control">
+                                <option value="xlsx">XLSX</option>
+                                <option value="xls">XLS</option>
+                                <option value="csv">CSV</option>
+                            </select>
+                            <button type="submit" name="export_excel_btn" class="btn btn-primary mt-3">Exportar</button>
 
                         </form>
 
